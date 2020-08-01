@@ -1,9 +1,9 @@
 ---
 - name: test_role
-  hosts: localhost
-  connection: local
-  gather_facts: True
-  max_fail_percentage: 0
+  hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
   roles:
     - {
         role: mysql,
