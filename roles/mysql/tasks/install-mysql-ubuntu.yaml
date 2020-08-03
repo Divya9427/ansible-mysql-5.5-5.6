@@ -152,6 +152,6 @@
     path: /usr/local/bin/mysql
     owner: root
     group: root
-    mode: 0644
+    mode: 0777
     state: link
   when: need_to_install_mysql is failed
