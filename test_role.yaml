@@ -1,6 +1,6 @@
 ---
 - name: test_role
-  hosts: all
+  hosts: sql
   become: yes
   become_user: root
   become_method: sudo
